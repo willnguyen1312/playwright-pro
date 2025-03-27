@@ -10,9 +10,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "pnpm exec playwright test",
+    "test:ui": "pnpm exec playwright test --ui",
+    "test:report": "pnpm exec playwright show-report",
+    "test:debug": "pnpm exec playwright test --debug"
   },
   "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.14",
     "typescript": "~5.7.2",
     "vite": "^6.2.0"
   }
