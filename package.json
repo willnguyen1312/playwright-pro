@@ -13,8 +13,10 @@
     "preview": "vite preview",
     "test": "pnpm exec playwright test",
     "test:ui": "pnpm exec playwright test --ui",
+    "test:trace": "pnpm exec playwright test --trace on",
     "test:report": "pnpm exec playwright show-report",
-    "test:debug": "pnpm exec playwright test --debug"
+    "test:debug": "pnpm exec playwright test --debug",
+    "test:generate": "pnpm exec playwright codegen demo.playwright.dev/todomvc"
   },
   "devDependencies": {
     "@playwright/test": "^1.51.1",
